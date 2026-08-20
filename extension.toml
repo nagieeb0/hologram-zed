@@ -1,7 +1,7 @@
 id = "hologram"
 name = "Hologram"
 description = "HOLO template language support for the Hologram framework."
-version = "0.2.0"
+version = "0.2.1"
 schema_version = 1
 authors = ["Mohammed Nagieeb <mohammed.nagieeb@gmail.com>"]
 repository = "https://github.com/nagieeb0/hologram-zed"

@@ -28,6 +28,3 @@ opt_into_language_servers = ["elixir-ls", "expert", "next-ls", "lexical"]
 [overrides.string]
 completion_query_characters = ["-"]
 opt_into_language_servers = ["tailwindcss-language-server"]
-
-[overrides.identifier]
-word_characters = ["!", "?", "@"]

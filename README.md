@@ -67,6 +67,10 @@ Changing the grammar means editing
 [tree-sitter-holo](https://github.com/nagieeb0/tree-sitter-holo), pushing it, then
 updating `commit` under `[grammars.holo]` in `extension.toml`.
 
+If you change the grammar's `repository` URL, delete the cached checkout first —
+`rm -rf grammars/` — otherwise Zed fails with *"grammar directory … already exists, but
+is not a git clone of …"*.
+
 ## Requirements
 
 The [Elixir extension](https://github.com/zed-extensions/elixir), for Elixir highlighting

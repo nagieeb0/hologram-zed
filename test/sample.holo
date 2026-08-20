@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- a comment -->
+<Layout.Default page_title={@title}>
+  <div class="wrapper" id={"item-#{@id}"} data-x=plain title='single'>
+    <h1 $click="increment">{@count}</h1>
+    <img src={@url} alt="pic">
+    <br />
+    <input type="text" $change={:update, field: :name} />
+    {%if @count > 0}
+      <p>positive &amp; > zero</p>
+    {%else}
+      <p>zero</p>
+    {/if}
+    {%for item <- @items}
+      <li key={item.id}>{item.name} costs {%{a: 1}}</li>
+    {/for}
+    {%raw}
+      {this is not an expression} <not-a-tag>
+    {/raw}
+    <UI.Button $click={:save, id: @id} disabled={@busy}>Save</UI.Button>
+    <p>escaped \{ and \$ and \# stay literal</p>
+  </div>
+  <style>.wrapper { color: red; }</style>
+  <script>
+    function f() \{ console.log("count:", {@count}); \}
+  </script>
+</Layout.Default>

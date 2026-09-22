@@ -1,6 +1,6 @@
-id = "hologram"
-name = "Hologram"
-description = "HOLO template language support for the Hologram framework."
+id = "holo-community"
+name = "HOLO Community"
+description = "Community Zed extension providing HOLO template language support for the Hologram framework."
 version = "0.1.0"
 schema_version = 1
 authors = ["Mohammed Nagieeb <mohammed.nagieeb@gmail.com>"]
